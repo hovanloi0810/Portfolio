@@ -21,7 +21,7 @@ body {
 }
 
 .header__navbar {
-  height: 99px;
+  line-height: 2;
 }
 
 .header__icon {
@@ -71,6 +71,10 @@ header ul li:hover a {
 }
 
 /* Carousel */
+.carousel__list {
+  margin-bottom: 100px;
+}
+
 .carousel .carousel__list-item {
   height: 13px;
   width: 13px;
@@ -92,11 +96,11 @@ li.carousel__list-item.active {
 }
 
 .carousel-item:nth-child(2) {
-  background-image: url(../img/mountains-1.jpg);
+  background-image: url(../img/mountains.jpg);
 }
 
 .carousel-item:nth-child(3) {
-  background-image: url(../img/mountains.jpg);
+  background-image: url(../img/mountains-1.jpg);
 }
 
 .carousel__overlay {
@@ -124,11 +128,13 @@ li.carousel__list-item.active {
 
 .img_thumb img {
   border-radius: 50%;
+  width: 140px;
 }
 
 .carousel-caption {
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #project {
@@ -139,6 +145,7 @@ li.carousel__list-item.active {
 
 .title {
   width: 750px;
+  padding-bottom: unset !important;
 }
 
 .title__heading {
@@ -149,6 +156,7 @@ li.carousel__list-item.active {
 }
 
 .title__text {
+  color: #585858;
 }
 
 .project__item {
@@ -157,6 +165,8 @@ li.carousel__list-item.active {
   cursor: pointer;
   box-shadow: 0 0 0.4rem rgb(0 0 0 / 13%);
   border-radius: 16px;
+  height: 420px;
+  width: 100%;
 }
 
 .project__img {
@@ -175,7 +185,12 @@ li.carousel__list-item.active {
   border-radius: 0 0 16px 16px;
   border-top: unset;
 }
-.project__cart:hover h5 {
+
+.card-text {
+  color: #585858;
+}
+
+.project__item:hover h5 {
   color: #35a22c;
 }
 
@@ -191,6 +206,10 @@ li.carousel__list-item.active {
 .my-nav__link {
   border: 1px solid #1a1d2d;
   color: #1a1d2d;
+}
+
+.my-nav__link:hover {
+  color: unset;
 }
 
 .services {
@@ -319,7 +338,7 @@ li.carousel__list-item.active {
 }
 
 .footer__top {
-  padding: 40px 0;
+  padding-bottom: 29px;
   border-bottom: 1px solid #454545;
 }
 
@@ -342,4 +361,19 @@ li.carousel__list-item.active {
 }
 
 .footer__top-icon {
+}
+
+.footer__bottom-copyright {
+  color: #aaa;
+  margin-top: 32px;
+  margin-bottom: unset;
+}
+.footer__bottom-link {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer__bottom-link:hover {
+  color: #35a22c;
+  text-decoration: none;
 }

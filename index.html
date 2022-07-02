@@ -18,6 +18,8 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
     <!-- Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,13 +42,14 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
+
   <body>
     <div class="app">
       <!-- Begin: Header -->
-      <header class="header container">
-        <nav class="navbar navbar-expand-md navbar-dark header__navbar">
+      <header class="header container-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark header__navbar">
           <!-- Brand -->
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand navbar__link" href="#">
             <i class="fa fa-dice-d20 header__icon"></i>
             <span class="header__title">CyberPortfolio</span>
           </a>
@@ -63,7 +66,7 @@
 
           <!-- Navbar links -->
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto navbar">
+            <ul class="navbar-nav ml-auto navbar navbar__list">
               <li class="nav-item my-active navbar__item">
                 <a class="nav-link navbar__item-link" href="#">Home</a>
               </li>
@@ -85,7 +88,7 @@
       <!-- Begin: Carousel data-ride="carousel" -->
       <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
         <!-- Indicators -->
-        <ul class="carousel-indicators">
+        <ul class="carousel-indicators carousel__list">
           <li
             data-target="#demo"
             data-slide-to="0"
@@ -107,7 +110,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="carousel__overlay"></div>
-            <div class="carousel-caption">
+            <div class="carousel-caption container">
               <div class="img_thumb">
                 <img
                   class="img-fluid animate__animated animate__fadeInUp"
@@ -115,13 +118,23 @@
                   alt=""
                 />
               </div>
-              <h3 class="carousel__title">Our goals. Our mission.</h3>
-              <p class="carousel__text">How we help other companies to grow.</p>
+              <h3
+                class="carousel__title animate__animated animate__fadeInUp animate__delay-1s"
+              >
+                Our goals. Our mission.
+              </h3>
+              <p
+                class="carousel__text animate__animated animate__fadeInUp animate__delay-2s"
+              >
+                How we help other companies to grow.
+              </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <div class="carousel-caption">
+            <div class="carousel__overlay"></div>
+
+            <div class="carousel-caption container">
               <div class="img_thumb">
                 <img
                   class="img-fluid animate__animated animate__fadeInUp"
@@ -129,13 +142,22 @@
                   alt=""
                 />
               </div>
-              <h3 class="carousel__title">Our goals. Our mission.</h3>
-              <p class="carousel__text">How we help other companies to grow.</p>
+              <h3
+                class="carousel__title animate__animated animate__fadeInUp animate__delay-1s"
+              >
+                Our goals. Our mission.
+              </h3>
+              <p
+                class="carousel__text animate__animated animate__fadeInUp animate__delay-2s"
+              >
+                How we help other companies to grow.
+              </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <div class="carousel-caption">
+            <div class="carousel__overlay"></div>
+            <div class="carousel-caption container">
               <div class="img_thumb">
                 <img
                   class="img-fluid animate__animated animate__fadeInUp"
@@ -143,8 +165,16 @@
                   alt=""
                 />
               </div>
-              <h3 class="carousel__title">Our goals. Our mission.</h3>
-              <p class="carousel__text">How we help other companies to grow.</p>
+              <h3
+                class="carousel__title animate__animated animate__fadeInUp animate__delay-1s"
+              >
+                Our goals. Our mission.
+              </h3>
+              <p
+                class="carousel__text animate__animated animate__fadeInUp animate__delay-2s"
+              >
+                How we help other companies to grow.
+              </p>
             </div>
           </div>
         </div>
@@ -191,12 +221,11 @@
         </div>
         
       </div> -->
-
       <!-- End: Carousel -->
 
       <!-- Begin: Project -->
       <section class="container py-5 project" id="project">
-        <div class="title text-center mx-auto">
+        <div class="title text-center mx-auto py-5">
           <h3 class="title__heading">I Love What I Do</h3>
           <p class="my-3 title__text">
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
@@ -207,7 +236,7 @@
           </p>
         </div>
 
-        <div class="project__content">
+        <div class="project__content pt-3 pb-5">
           <!-- Nav pills -->
           <ul class="nav nav-pills justify-content-center my-nav">
             <li class="nav-item my-nav__item">
@@ -244,103 +273,99 @@
             <div class="tab-pane container active" id="home">
               <div class="row">
                 <div class="col-12 col-sm-6 col-lg-4">
-                  <div class="card project__item">
+                  <div
+                    class="card project__item animate__animated animate__zoomIn"
+                  >
                     <img
                       class="card-img-top project__img"
                       src="./assets/img/g1.jpg"
                       alt="Card image cap"
                     />
                     <div class="card-body project__cart">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
+                      <h5 class="card-title">
+                        Apologetic robot holding flowers
+                      </h5>
+                      <p class="card-text">Branding</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-4">
-                  <div class="card project__item">
+                  <div
+                    class="card project__item animate__animated animate__zoomIn"
+                  >
                     <img
                       class="card-img-top project__img"
                       src="./assets/img/g2.jpg"
                       alt="Card image cap"
                     />
                     <div class="card-body project__cart">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
+                      <h5 class="card-title">Woman walking her small dog</h5>
+                      <p class="card-text">Illustrations</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-4">
-                  <div class="card project__item">
+                  <div
+                    class="card project__item animate__animated animate__zoomIn"
+                  >
                     <img
                       class="card-img-top project__img"
                       src="./assets/img/g3.jpg"
                       alt="Card image cap"
                     />
                     <div class="card-body project__cart">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
+                      <h5 class="card-title">Oil bottle branding</h5>
+                      <p class="card-text">Branding</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-4">
-                  <div class="card project__item">
+                  <div
+                    class="card project__item animate__animated animate__zoomIn"
+                  >
                     <img
                       class="card-img-top project__img"
                       src="./assets/img/g4.jpg"
                       alt="Card image cap"
                     />
                     <div class="card-body project__cart">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
+                      <h5 class="card-title">Smiling Woman</h5>
+                      <p class="card-text">Illustrations</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-4">
-                  <div class="card project__item">
+                  <div
+                    class="card project__item animate__animated animate__zoomIn"
+                  >
                     <img
                       class="card-img-top project__img"
                       src="./assets/img/g5.jpg"
                       alt="Card image cap"
                     />
                     <div class="card-body project__cart">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
+                      <h5 class="card-title">Drink can design</h5>
+                      <p class="card-text">Packaging</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-4">
-                  <div class="card project__item">
+                  <div
+                    class="card project__item animate__animated animate__zoomIn"
+                  >
                     <img
                       class="card-img-top project__img"
                       src="./assets/img/g6.jpg"
                       alt="Card image cap"
                     />
                     <div class="card-body project__cart">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
+                      <h5 class="card-title">I love you hand gesture</h5>
+                      <p class="card-text">Illustrations</p>
                     </div>
                   </div>
                 </div>
@@ -350,52 +375,51 @@
             <div class="tab-pane container fade" id="illus">
               <div class="row">
                 <div class="col-12 col-sm-6 col-lg-4">
-                  <div class="card project__item">
+                  <div
+                    class="card project__item animate__animated animate__zoomIn"
+                  >
                     <img
                       class="card-img-top project__img"
                       src="./assets/img/g1.jpg"
                       alt="Card image cap"
                     />
                     <div class="card-body project__cart">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
+                      <h5 class="card-title">
+                        Apologetic robot holding flowers
+                      </h5>
+                      <p class="card-text">Branding</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-4">
-                  <div class="card project__item">
+                  <div
+                    class="card project__item animate__animated animate__zoomIn"
+                  >
                     <img
                       class="card-img-top project__img"
                       src="./assets/img/g2.jpg"
                       alt="Card image cap"
                     />
                     <div class="card-body project__cart">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
+                      <h5 class="card-title">Woman walking her small dog</h5>
+                      <p class="card-text">Illustrations</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-lg-4">
-                  <div class="card project__item">
+                  <div
+                    class="card project__item animate__animated animate__zoomIn"
+                  >
                     <img
                       class="card-img-top project__img"
                       src="./assets/img/g3.jpg"
                       alt="Card image cap"
                     />
                     <div class="card-body project__cart">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
+                      <h5 class="card-title">Oil bottle branding</h5>
+                      <p class="card-text">Branding</p>
                     </div>
                   </div>
                 </div>
@@ -405,34 +429,36 @@
             <div class="tab-pane container fade" id="photo">
               <div class="row">
                 <div class="col-12 col-sm-6 col-lg-4">
-                  <div class="card project__item">
-                    <img
-                      class="card-img-top project__img"
-                      src="./assets/img/g2.jpg"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body project__cart">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4">
-                  <div class="card project__item">
+                  <div
+                    class="card project__item animate__animated animate__zoomIn"
+                  >
                     <img
                       class="card-img-top project__img"
                       src="./assets/img/g3.jpg"
                       alt="Card image cap"
                     />
                     <div class="card-body project__cart">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">Oil bottle branding</h5>
                       <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        Branding
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="card project__item animate__animated animate__zoomIn"
+                  >
+                    <img
+                      class="card-img-top project__img"
+                      src="./assets/img/g4.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body project__cart">
+                      <h5 class="card-title">Smiling Woman</h5>
+                      <p class="card-text">
+                        Illustrations
                       </p>
                     </div>
                   </div>
@@ -443,17 +469,18 @@
             <div class="tab-pane container fade" id="website">
               <div class="row">
                 <div class="col-12 col-sm-6 col-lg-4">
-                  <div class="card project__item">
+                  <div
+                    class="card project__item animate__animated animate__zoomIn"
+                  >
                     <img
                       class="card-img-top project__img"
-                      src="./assets/img/g1.jpg"
+                      src="./assets/img/g6.jpg"
                       alt="Card image cap"
                     />
                     <div class="card-body project__cart">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">I love you hand gesture</h5>
                       <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        Illustrations
                       </p>
                     </div>
                   </div>
@@ -468,9 +495,9 @@
       <!-- Begin: service -->
       <section class="services">
         <div class="services__overlay"></div>
-        <div class="title text-center mx-auto text-light services__heading">
+        <div class="title container text-center mx-auto text-light services__heading">
           <h3 class="title__heading text-light">I'm Available For Hire</h3>
-          <p class="my-3 title__text">
+          <p class="my-3 title__text text-light">
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
             posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
             sodales quis. Integer sit amet mattis quam.
@@ -518,7 +545,7 @@
       <!--Begin: award -->
       <section class="award">
         <div class="award__bg"></div>
-        <div class="container award__content">
+        <div class="container-lg award__content">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-5">
               <div class="award__item">
@@ -641,9 +668,9 @@
     ></script>
 
     <script>
-      $(".carousel").carousel({
-        interval: 2000,
-      });
+      // $(".carousel").carousel({
+      //   interval: 2000,
+      // });
     </script>
   </body>
 </html>
